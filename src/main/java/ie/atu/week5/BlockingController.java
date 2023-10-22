@@ -1,11 +1,13 @@
 package ie.atu.week5;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class BlockingController {
 
+    @Autowired
     private final BlockingService blockingService;
 
     public BlockingController(BlockingService blockingService) {
